@@ -8,7 +8,7 @@ export default function HomePage() {
         Exploring Next.js rendering strategies.
       </p>
       <div className="bg-gray-800 p-6 rounded-lg inline-block">
-        <p className="text-sm uppercase text-gray-400 mb-2">
+        <p className="text-2xl font-mono font-semibold">
            Clock
         </p>
         <ClientClock />
