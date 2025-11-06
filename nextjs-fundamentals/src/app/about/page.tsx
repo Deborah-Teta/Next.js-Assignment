@@ -1,6 +1,6 @@
 import { fetchUser } from "@/lib/fetchUser";
 
-export const revalidate = 0; // Force SSR
+export const revalidate = 0; 
 
 export default async function AboutPage() {
   const user = await fetchUser();

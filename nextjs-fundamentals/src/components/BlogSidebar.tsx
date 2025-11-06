@@ -13,7 +13,7 @@ export default async function BlogSidebar() {
       <ul className="space-y-2">
         {["Tech", "Lifestyle", "Education", "Travel"].map((cat) => (
           <li key={cat}>
-            <button className="text-blue-600 dark:text-blue-400 hover:underline">
+            <button className="text-blue-400 hover:underline">
               {cat}
             </button>
           </li>

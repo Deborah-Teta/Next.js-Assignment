@@ -1,4 +1,3 @@
-// app/page.tsx
 import ClientClock from "@/components/ClientClock";
 
 export default function HomePage() {
