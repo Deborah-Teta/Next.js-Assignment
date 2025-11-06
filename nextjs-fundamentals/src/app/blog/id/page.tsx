@@ -8,7 +8,7 @@ export const revalidate = 60;
 export async function generateStaticParams() {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
   const posts = await res.json();
-  return posts.slice(0, 10).map((post: any) => ({
+  return posts.slice(0, 10).map((post: string | number ) => ({
     id: post.id.toString(),
   }));
 }

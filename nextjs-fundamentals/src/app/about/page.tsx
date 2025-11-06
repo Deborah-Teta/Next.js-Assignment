@@ -1,4 +1,3 @@
-// app/about/page.tsx
 import { fetchUser } from "@/lib/fetchUser";
 
 export const revalidate = 0; // Force SSR
@@ -17,7 +16,7 @@ export default async function AboutPage() {
         <p className="mt-4 italic">&quot;{user.company.catchPhrase}&quot;</p>
       </div>
       <p className="mt-6 text-sm text-gray-500">
-        This page uses <strong>Server-Side Rendering (SSR)</strong>.
+        Know more about me <strong>Here</strong>.
       </p>
     </div>
   );

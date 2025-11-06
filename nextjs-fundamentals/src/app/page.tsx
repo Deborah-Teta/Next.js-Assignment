@@ -10,7 +10,7 @@ export default function HomePage() {
       </p>
       <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg inline-block">
         <p className="text-sm uppercase text-gray-500 dark:text-gray-400 mb-2">
-          Live Clock (Client-Side Rendered)
+           Clock
         </p>
         <ClientClock />
       </div>

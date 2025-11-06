@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { fetchPosts } from "@/lib/fetchPosts";
-import { Key, ReactElement, JSXElementConstructor, ReactNode, ReactPortal } from "react";
+import { Key } from "react";
 
 export const revalidate = false; // Full SSG at build time
 
@@ -11,7 +11,7 @@ export default async function BlogPage() {
     <div>
       <h1 className="text-4xl font-bold mb-8">Blog Posts</h1>
       <div className="grid gap-6 md:grid-cols-2">
-        {posts.slice(0, 6).map((post: { id: Key | null | undefined; title: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<unknown>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined; body: string; }) => (
+        {posts.slice(0, 6).map((post: { id: Key | null | undefined; title: string | number | bigint | boolean ; body: string; }) => (
           <Link
             key={post.id}
             href={`/blog/${post.id}`}
